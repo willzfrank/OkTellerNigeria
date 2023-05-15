@@ -639,79 +639,100 @@
       </section>
 
       <footer>
-        <div>
-          <div>
+        <div class="container container-flex">
+          <article class="footer-logo">
             <h1>OKTELLER NIGERIA</h1>
             <p>
-              OKTELLER NIGERIA is into Telecommunication, Digital Service, and
-              Market Exchange. We offer best deals when it comes to internet
-              Data Plans, Airtime,Bills payment like GOTV, DSTV & STARTIMES.
+              OKTELLER NIGERIA is a telecommunications company specializing in
+              digital services and market exchange. We offer the best deals on
+              internet data plans, airtime, and bill payments for services like
+              GOTV, DSTV & STARTIMES.
             </p>
-          </div>
+          </article>
 
-          <div>
+          <section class="footer-services">
             <h2>Our Services</h2>
-            <ul>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >Buy Data</a
-                >
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >Buy Airtime</a
-                >
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >Bill Payment</a
-                >
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >Bulks SMS</a
-                >
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >Cable Subscription</a
-                >
-              </li>
-            </ul>
-          </div>
+            <nav aria-label="Our Services">
+              <ul>
+                <li>
+                  <a
+                    href="https://okteller.com.ng/login.php"
+                    rel="noopener noreferrer"
+                    >Buy Data</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://okteller.com.ng/login.php"
+                    rel="noopener noreferrer"
+                    >Buy Airtime</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://okteller.com.ng/login.php"
+                    rel="noopener noreferrer"
+                    >Bill Payment</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://okteller.com.ng/login.php"
+                    rel="noopener noreferrer"
+                    >Bulk SMS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://okteller.com.ng/login.php"
+                    rel="noopener noreferrer"
+                    >Cable Subscription</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </section>
 
-          <div>
-            <h2>Useful Link</h2>
-            <ul>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >Developer's API</a
-                >
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >F.A.Q's</a
-                >
-              </li>
-            </ul>
-          </div>
+          <section class="footer-link">
+            <h2>Useful Links</h2>
+            <nav aria-label="Useful Links">
+              <ul>
+                <li>
+                  <a
+                    href="https://okteller.com.ng/documentation"
+                    rel="noopener noreferrer"
+                    >Developer's API</a
+                  >
+                </li>
+                <li>
+                  <a href="#aboutUs" rel="noopener noreferrer">About Us</a>
+                </li>
+                <li>
+                  <a href="#ourServices" rel="noopener noreferrer">Services</a>
+                </li>
+                <li>
+                  <a href="#faq" rel="noopener noreferrer">F.A.Q's</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
         </div>
-        <p>OKTELLER NIGERIA Copyright © 2022 All Rights Reserved</p>
+
+        <address class="copyright">
+          <small
+            >&copy; <span id="current-year"></span> OKTELLER NIGERIA. All Rights
+            Reserved.</small
+          >
+        </address>
       </footer>
     </main>
   </body>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper('.mySwiper', {});
+
+    document.getElementById('current-year').textContent =
+      new Date().getFullYear();
   </script>
 </html>
