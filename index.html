@@ -18,6 +18,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
@@ -47,11 +51,11 @@
     />
   </head>
   <body>
-    <nav>
-      <div>
+    <nav class="nav">
+      <div class="logo">
         <h1>OKTELLER NIGERIA</h1>
       </div>
-      <div>
+      <div class="menu">
         <ul>
           <li>Home</li>
           <li>About</li>
@@ -64,8 +68,8 @@
         </ul>
       </div>
     </nav>
-    <header>
-      <!-- Swiper -->
+
+    <!-- <header>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -101,540 +105,757 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </header>
+    </header> -->
     <main>
-      <section>
-        <!-- ABOUT US -->
+      <section class="about-us container">
         <h2>ABOUT US</h2>
         <p>
-          OKTELLER NIGERIA is a registered telecommunication vendor known for
+          OKTELLER NIGERIA is a registered telecommunications vendor known for
           providing internet services, airtime VTU, cable TV subscriptions,
-          electricity payment, converting airtime to cash, bitcoin buying and
-          selling, and selling of UK used phones like Iphones, Samsung etc. at a
-          very cheap and affordable price.
+          electricity payments, converting airtime to cash, buying and selling
+          bitcoins, and offering affordable UK used phones such as iPhones and
+          Samsung devices.
         </p>
-        <div>
+        <div class="content">
           <div>
-            <h2>Best Telecommunication Company</h2>
+            <h3>Best Telecommunication Company</h3>
             <p>
-              OKTELLER NIGERIA also give people the opportunity of becoming
-              their reseller and be making money on hourly and daily basis so as
-              to boost their financial status.
+              OKTELLER NIGERIA also provides individuals with the opportunity to
+              become resellers and earn money on an hourly and daily basis,
+              boosting their financial status.
             </p>
             <br />
             <p>
-              We offer instant recharge of Airtime, Databundle, CableTV (DStv,
-              GOtv & Startimes), Electricity Bill Payemnt, Conversion of Airtime
-              to cash and selling of result checkers(WAEC & NECO) at better
-              rates than others.
+              We offer instant recharge services for Airtime, Databundle, Cable
+              TV (DStv, GOtv & Startimes), Electricity Bill Payment, Conversion
+              of Airtime to cash, and selling of result checkers (WAEC & NECO)
+              at competitive rates.
             </p>
             <ul>
-              <li>Easy to used</li>
-              <li>Easy to customize</li>
-              <li>Awesome design</li>
+              <li>Easy to use</li>
+              <li>Customizable</li>
+              <li>Stunning design</li>
             </ul>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src="./assets/app-about.jpg" alt="" />
           </div>
         </div>
       </section>
 
-      <section>
-        <!-- WHY CHOOSE US -->
+      <section class="why-choose-us container">
+        <h2 class="faq-title">Why Choose Us?</h2>
         <p>
-          Here at OKTELLER NIGERIA our services are completely Fast, Secure &
-          Automated. We provide 24/7hrs Support to our registered users.
+          At OKTELLER NIGERIA, we offer Fast, Secure, and Automated services
+          with 24/7 support for our registered users.
         </p>
-        <div>
-          <div>
-            <div>
-              <h2>Automation</h2>
-              <p>
-                Convert MTN, 9mobile, Airtel and Glo airtime to cash instantly.
-                Airtime topup and data purchase are automated and get delivered
-                to you almost instantly.
-              </p>
-            </div>
-            <div>
-              <h2>We're Fast</h2>
-              <p>
-                OKTELLER NIGERIA lets you purchase mobile data, top up airtime,
-                pay your cable and electricity bills e.t.c all at the speed of
-                light.
-              </p>
-            </div>
-            <div>
-              <h2>You're Safe</h2>
-              <p>
-                Your E-wallet is secured with a military grade comodo SSL
-                certificate to ensure that your funds will be safe for as long
-                as you want it to be.
-              </p>
-            </div>
-            <div>
-              <h2>We're Reliable</h2>
-              <p>
-                We use a customized application specifically designed a testing
-                gnose to keep away for people.
-              </p>
-            </div>
-            <div>
-              <img src="" alt="mobile device" />
-            </div>
-          </div>
+        <div class="features">
+          <article>
+            <h3>Automation</h3>
+            <p>
+              Instantly convert airtime from MTN, 9mobile, Airtel, and Glo to
+              cash. Airtime top-up and data purchase are automated and delivered
+              almost instantly.
+            </p>
+          </article>
+          <article>
+            <h3>Speed</h3>
+            <p>
+              Purchase mobile data, top up airtime, pay your cable and
+              electricity bills, and more at the speed of light.
+            </p>
+          </article>
+          <article>
+            <h3>Safety</h3>
+            <p>
+              Your E-wallet is secured with a military-grade Comodo SSL
+              certificate to ensure the safety of your funds.
+            </p>
+          </article>
+          <article>
+            <h3>Reliability</h3>
+            <p>
+              Our customized application is designed to keep unwanted people
+              away.
+            </p>
+          </article>
+          <!-- <div class="image-container">
+            <img
+              src="./assets/home-2.png"
+              alt="Mobile device displaying OKTELLER NIGERIA website"
+            />
+          </div> -->
         </div>
       </section>
 
-      <section>
-        <h2>Our Awsome Services</h2>
-        <div>
-          <div>
-            <div></div>
-            <h3>Buy Data</h3>
-            <p>
-              Start enjoying this very low rates Data plan for your internet
-              browsing databundle.
-            </p>
-          </div>
+      <section class="container">
+        <h2 class="faq-title">Our Awesome Services</h2>
+        <p>We Provide The Best Services.</p>
+        <ul class="services">
+          <li>
+            <article>
+              <img src="data.png" alt="Buy Data" />
+              <h3>Buy<span> Data </span></h3>
+              <p>
+                Start enjoying this very low rates Data plan for your internet
+                browsing databundle.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="utility.png" alt="Utility Payment" />
+              <h3>Utility <span>Payment</span></h3>
+              <p>
+                Because we understand your needs, we have made bills and
+                utilities payment convenient.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="cable.png" alt="Cable Subscription" />
+              <h3>Cable <span>Subscription</span></h3>
+              <p>
+                Instantly Activate Cable subscription with favourable discount
+                compare to others.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="airtime.png" alt="Airtime TopUp" />
+              <h3>Airtime <span>TopUp</span></h3>
+              <p>
+                Making an online recharge has become very easy and safe on
+                OKTELLER NIGERIA.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="cash.png" alt="Airtime To Cash" />
+              <h3>Airtime <span>To Cash</span></h3>
+              <p>
+                We offer this service at a very good attractive rate login to
+                see current conversion rate.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="sms.png" alt="Bulk SMS" />
+              <h3>Bulk <span>SMS</span></h3>
+              <p>
+                Send BulkSMS to any number for as low as just 1.5kobo per unit.
+              </p>
+            </article>
+          </li>
+        </ul>
 
-          <div>
-            <div></div>
-            <h3>Utility Payment</h3>
-            <p>
-              Because we understand your needs, we have made bills and utilities
-              payment convenient.
-            </p>
-          </div>
-
-          <div>
-            <div></div>
-            <h3>Cable subscription</h3>
-            <p>
-              Instantly Activate Cable subscription with favourable discount
-              compare to others.
-            </p>
-          </div>
-
-          <div>
-            <div></div>
-            <h3>Airtime TopUp</h3>
-            <p>
-              Making an online recharge has become very easy and safe on
-              OKTELLER NIGERIA.
-            </p>
-          </div>
-
-          <div>
-            <div></div>
-            <h3>Airtime To Cash</h3>
-            <p>
-              We offer this service at a very good attractive rate login to see
-              current conversion rate.
-            </p>
-          </div>
-
-          <div>
-            <div></div>
-            <h3>Bulk SMS</h3>
-            <p>
-              Send BulkSMS to any number for as low as just 1.5kobo per unit.
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <div>
+        <ul class="statistics">
+          <li>
             <p>Users</p>
-            <p>4560+</p>
-          </div>
-
-          <div>
+            <p class="faq-title">4560+</p>
+          </li>
+          <li>
             <p>Happy Clients</p>
-            <p>4032+</p>
-          </div>
-
-          <div>
+            <p class="faq-title">4032+</p>
+          </li>
+          <li>
             <p>Logged In Users</p>
-            <p>3238+</p>
-          </div>
-
-          <div>
+            <p class="faq-title">3238+</p>
+          </li>
+          <li>
             <p>Years of Experience</p>
-            <p>4</p>
-          </div>
-        </div>
+            <p class="faq-title">4</p>
+          </li>
+        </ul>
 
         <div>
-          <h2>Our Amazing Partners</h2>
-          <div>swiper</div>
+          <h2 class="faq-title">Our Amazing Partners</h2>
+          <div class="">
+            <!-- add partner logos here -->
+            <div class="swiper mySwiper network-wrapper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide img-network">
+                  <img src="./assets/airtel-partner.png" alt="" />
+                </div>
+                <div class="swiper-slide img-network">
+                  <img src="./assets/dstv-partner.png" alt="" />
+                </div>
+                <div class="swiper-slide img-network">
+                  <img src="./assets/glo-partner.png" alt="" />
+                </div>
+                <div class="swiper-slide img-network">
+                  <img src="./assets/ikeja-partner.png" alt="" />
+                </div>
+                <div class="swiper-slide img-network">
+                  <img src="./assets/mobile9partner.png" alt="" />
+                </div>
+                <div class="swiper-slide img-network">
+                  <img src="./assets/mtn-partner.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section class="container price-container">
         <h2>EXCLUSIVE DATA PRICES</h2>
         <p>Our Affordable Data Prices</p>
-        <div>
-          <div>
-            <div>
-              <img src="" alt="" />
+        <div class="network-container">
+          <div class="network">
+            <div class="network-image">
+              <img src="./assets/mtn.jpg" alt="MTN" />
+              <h6>MTN Data</h6>
             </div>
-            <div>
-              <div>
+            <div class="data-plans">
+              <div class="data-plan">
                 <div>500.0MB</div>
                 <div>₦150</div>
-                <div>1month</div>
+                <div>1 month</div>
               </div>
 
-              <div>
+              <div class="data-plan">
                 <div>1.0GB</div>
                 <div>₦250</div>
-                <div>(1month)</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
+              <div class="data-plan">
                 <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+                <div>₦300</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>2.0GB</div>
+                <div>₦500</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>2.0GB</div>
+                <div>₦600</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
+              <div class="data-plan">
                 <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+                <div>₦480</div>
+                <div>(1 day)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>3.0GB</div>
+                <div>₦705</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>1.5GB</div>
+                <div>₦960</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>5.0GB</div>
+                <div>₦1070</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>2.0GB</div>
+                <div>₦1152</div>
+                <div>(1 month)</div>
               </div>
+              <div class="data-plan">
+                <div>5.0GB</div>
+                <div>₦1175</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>10.0GB</div>
+                <div>₦2140</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>10.0GB</div>
+                <div>₦2350</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>6.0GB</div>
+                <div>₦2400</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>10.0GB</div>
+                <div>₦2880</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>12.0GB</div>
+                <div>₦3360</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>20.0GB</div>
+                <div>₦4280</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>20.0GB</div>
+                <div>₦4800</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>40.0GB</div>
+                <div>₦8560</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>40.0GB</div>
+                <div>₦9600</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>75.0GB</div>
+                <div>₦14400</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>120.0GB</div>
+                <div>₦19200</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>200.0GB</div>
+                <div>₦28800</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>400.0GB</div>
+                <div>₦48000</div>
+                <div>(2month)</div>
+              </div>
+            </div>
+            <button>
+              <a href="https://okteller.com.ng/login.php">Purchase</a>
+            </button>
+          </div>
+
+          <div class="network">
+            <div class="network-image">
+              <img src="./assets/glo.jpg" alt="Glo" />
+              <h6>Glo Data</h6>
+            </div>
+            <div class="data-plans">
+              <div class="data-plan">
+                <div>1.35GB</div>
+                <div>₦430</div>
+                <div>2 weeks</div>
+              </div>
+
+              <div class="data-plan">
+                <div>2.9GB</div>
+                <div>₦840</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>4.1GB</div>
+                <div>₦1260</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>5.8GB</div>
+                <div>₦1680</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>7.7GB</div>
+                <div>₦2100</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>10.0GB</div>
+                <div>₦2520</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>14.0GB</div>
+                <div>₦3360</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>20.0GB</div>
+                <div>₦4200</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>29.5GB</div>
+                <div>₦6720</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>50.0GB</div>
+                <div>₦8400</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>93.0GB</div>
+                <div>₦12600</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>119.0GB</div>
+                <div>₦15120</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>138.0GB</div>
+                <div>₦16800</div>
+                <div>(1 month)</div>
+              </div>
+            </div>
+            <button>
+              <a href="https://okteller.com.ng/login.php">Purchase</a>
+            </button>
+          </div>
+
+          <div class="network">
+            <div class="network-image">
+              <img src="./assets/airtel.jpg" alt="Airtel" />
+              <h6>Airtel Data</h6>
+            </div>
+            <div class="data-plans">
+              <div class="data-plan">
+                <div>750.0MB</div>
+                <div>₦460</div>
+                <div>2 weeks</div>
+              </div>
+
+              <div class="data-plan">
+                <div>1.5GB</div>
+                <div>₦920</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>2.0GB</div>
+                <div>₦1104</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>3.0GB</div>
+                <div>₦1380</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>4.5GB</div>
+                <div>₦1840</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>6.0GB</div>
+                <div>₦2300</div>
+                <div>30 days</div>
+              </div>
+
+              <div class="data-plan">
+                <div>10.0GB</div>
+                <div>₦2760</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>11.0GB</div>
+                <div>₦3680</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>20.0GB</div>
+                <div>₦4600</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>40.0GB</div>
+                <div>₦9200</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>75.0GB</div>
+                <div>₦13800</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>120.0GB</div>
+                <div>₦18400</div>
+                <div>(1 month)</div>
+              </div>
+              <button>
+                <a href="https://okteller.com.ng/login.php">Purchase</a>
+              </button>
             </div>
           </div>
 
-          <div>
-            <div>
-              <img src="" alt="" />
+          <div class="network">
+            <div class="network-image">
+              <img src="./assets/9mobile.jpg" alt="9Mobile" />
+              <h6>9Mobile Data</h6>
             </div>
-            <div>
-              <div>
+            <div class="data-plans">
+              <div class="data-plan">
                 <div>500.0MB</div>
-                <div>₦150</div>
-                <div>1month</div>
+                <div>₦450</div>
+                <div>2 weeks</div>
               </div>
 
-              <div>
+              <div class="data-plan">
                 <div>1.0GB</div>
                 <div>₦250</div>
-                <div>(1month)</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>1.5GB</div>
+                <div>₦1058</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>2.0GB</div>
+                <div>₦1058</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>3.0GB</div>
+                <div>₦1320</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>7.0GB</div>
+                <div>₦1320</div>
+                <div>Weekly</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>4.5GB</div>
+                <div>₦1760</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>11.0GB</div>
+                <div>₦3520</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>15.0GB</div>
+                <div>₦4400</div>
+                <div>(1 month)</div>
               </div>
 
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
+              <div class="data-plan">
+                <div>40.0GB</div>
+                <div>₦8800</div>
+                <div>(1 month)</div>
+              </div>
+
+              <div class="data-plan">
+                <div>75.0GB</div>
+                <div>₦13200</div>
+                <div>(1 month)</div>
               </div>
             </div>
-          </div>
-
-          <div>
-            <div>
-              <img src="" alt="" />
-            </div>
-            <div>
-              <div>
-                <div>500.0MB</div>
-                <div>₦150</div>
-                <div>1month</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <img src="" alt="" />
-            </div>
-            <div>
-              <div>
-                <div>500.0MB</div>
-                <div>₦150</div>
-                <div>1month</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-
-              <div>
-                <div>1.0GB</div>
-                <div>₦250</div>
-                <div>(1month)</div>
-              </div>
-            </div>
+            <button>
+              <a href="https://okteller.com.ng/login.php">Purchase</a>
+            </button>
           </div>
         </div>
       </section>
 
-      <section>
-        <h2>Frequently Asked Questions</h2>
-        <p>
+      <section class="faq-section container">
+        <h2 class="faq-title">Frequently<span> Asked Questions </span></h2>
+        <p class="faq-description">
           Get answers to some of the frequently asked questions about our
           services.
         </p>
-        <div>
-          <img src="" alt="" />
-          <div>
-            <div>
-              <p>How To Buy Data?</p>
-              <div>
+
+        <div class="faq-image">
+          <figure>
+            <img src="./assets/girl.jpg" alt="Frequently Asked Questions" />
+          </figure>
+          <div class="faq-content">
+            <div class="faq-item">
+              <h3 class="faq-question">
+                <span> How To Buy Data? </span>
+                <i class="uil uil-plus"></i>
+              </h3>
+              <div class="faq-answer">
                 <ol>
                   <li>Log in to your account</li>
-                  <li>If not click here to register</li>
-                  <li>After log in click fund my account</li>
                   <li>
-                    Select Coupon payment ,NB:You can buy coupon code from our
-                    agents
+                    If not, click
+                    <a href="https://okteller.com.ng/register.php"
+                      >here to register</a
+                    >
+                  </li>
+                  <li>After logging in, click "Fund my account"</li>
+                  <li>
+                    Select "Coupon payment" (Note: You can buy coupon code from
+                    our agents)
                   </li>
                 </ol>
               </div>
             </div>
 
-            <div>
-              <p>2. How Do I Fund My Wallet?</p>
-              <div>
+            <div class="faq-item">
+              <h3 class="faq-question">
+                <span> How Do I Fund My Wallet? </span>
+                <i class="uil uil-plus"></i>
+              </h3>
+              <div class="faq-answer">
                 <p>
-                  You can fund your wallet using any of our Four payment means:
+                  You can fund your wallet using any of our four payment
+                  methods:
                 </p>
                 <ol>
-                  <li>Bank payment.</li>
+                  <li>Bank payment</li>
                   <li>
-                    Online Payment with your ATM card details via
-                    Paystack/Monnify Payment Gateway .
+                    Online payment with your ATM card details via
+                    Paystack/Monnify Payment Gateway
                   </li>
-                  <li>Payment with airtime.</li>
-                  <li>Payment with Coupon Code(s).</li>
+                  <li>Payment with airtime</li>
+                  <li>Payment with coupon code(s)</li>
                 </ol>
               </div>
             </div>
 
-            <div>
-              <p>3. Can I Send Airtime?</p>
-              <div>
+            <div class="faq-item">
+              <h3 class="faq-question">
+                <span>Can I Send Airtime?</span>
+                <i class="uil uil-plus"></i>
+              </h3>
+              <div class="faq-answer">
                 <p>
-                  Yes you can, but payment with airtime attracts little
-                  additional charge. Kindly fund your wallet with airtime
+                  Yes, you can. However, payment with airtime attracts a small
+                  additional charge. Kindly fund your wallet with airtime.
                 </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-question">
+                <span>Can Data Bought from you be Shared? </span>
+                <i class="uil uil-plus"></i>
+              </h3>
+              <div class="faq-answer">
+                <p>Only for Glo MTN ,9mobile ,airtel data can’t be shared</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-question">
+                <span>What Are The Codes For Checking Data Balance?</span>
+                <i class="uil uil-plus"></i>
+              </h3>
+              <div class="faq-answer">
+                <ol>
+                  <li>MTN *131*4#</li>
+                  <li>9mobile[Gifting] *228#</li>
+                  <li>Airtel *140#</li>
+                  <li>Glo *127*0#.</li>
+                </ol>
               </div>
             </div>
           </div>
         </div>
 
-        <div>
-          <h2>DOWNLOAD OUR APP</h2>
-          <p>
-            Download OKTELLER NIGERIA Android app, compatible with all devices.
-            Search for OKTELLER NIGERIA on playstore or click on the image below
-            to download the app Playstore. Will soon be available on App Store.
+        <div class="app-download">
+          <h2 class="download-title">Download<span> Our App </span></h2>
+          <p class="download-description">
+            Download the OKTELLER NIGERIA Android app, compatible with all
+            devices. Search for OKTELLER NIGERIA on the Play Store or click on
+            the image below to download the app from the Play Store. It will
+            soon be available on the App Store.
           </p>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            available on Play Store</a
+          <a
+            href="https://play.google.com/store/apps/details?id=GEODNATECH.ng"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="app-link"
           >
+            <img
+              src="./assets/png-white-google-play-playstore-logo-symbol-icon-11639742441dhglfjnad1.png"
+              alt="Google Play Store"
+              class="app-icon"
+            />
+            Available on Play Store
+          </a>
         </div>
       </section>
 
-      <section>
-        <h2>Get in Touch</h2>
-        <p>Get in Touch with us through any of the various way below:</p>
-        <div>
-          <div>
-            <div>
-              <h2>Office Address:</h2>
-              <p>
-                16a Oronna street, Aboru, Iyana-Ipaja, Lagos-state, Nigeria.
-              </p>
-            </div>
-          </div>
-          <div>
-            <h2>E-mail Address:</h2>
-            <a href="http://" target="_blank" rel="noopener noreferrer"
-              >Info@Okteller.com.ng</a
-            >
-          </div>
-          <div>
-            <h2>Phone Number:</h2>
-            <p>Call: +234 7033 267 307 .</p>
-          </div>
+      <section class="contact-section container">
+        <div class="contact-title">
+          <h2>Get<span> in Touch </span></h2>
+          <p>Get in touch with us through any of the various ways below:</p>
+        </div>
+
+        <div class="contact-details">
+          <article>
+            <h3>Office<span> Address </span></h3>
+            <p>16a Oronna street, Aboru, Iyana-Ipaja, Lagos-state, Nigeria.</p>
+          </article>
+
+          <article>
+            <h3>E-mail<span> Address </span></h3>
+            <a href="mailto:info@okteller.com.ng">info@okteller.com.ng</a>
+          </article>
+
+          <article>
+            <h3>Phone<span> Number </span></h3>
+            <p>Call: +234 7033 267 307</p>
+          </article>
         </div>
       </section>
 
@@ -729,10 +950,61 @@
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
   <script>
     var swiper = new Swiper('.mySwiper', {});
 
     document.getElementById('current-year').textContent =
       new Date().getFullYear();
+
+    // Get all the FAQ items
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    // Add event listeners to toggle the accordion
+    faqItems.forEach((item) => {
+      item.addEventListener('click', toggleAccordion);
+    });
+
+    // Function to toggle the accordion
+    function toggleAccordion() {
+      const isActive = this.classList.contains('active');
+      closeAllItems();
+
+      if (!isActive) {
+        this.classList.add('active');
+        const answer = this.querySelector('.faq-answer');
+        answer.classList.add('show');
+      }
+    }
+
+    // Function to close all FAQ items
+    function closeAllItems() {
+      faqItems.forEach((item) => {
+        item.classList.remove('active');
+        const answer = item.querySelector('.faq-answer');
+        answer.classList.remove('show');
+      });
+    }
+
+    // PARTNERS SWIPER
+
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      loop: true,
+      keyboard: {
+        enabled: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
+    });
   </script>
 </html>
