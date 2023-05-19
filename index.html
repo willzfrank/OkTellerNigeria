@@ -49,6 +49,10 @@
       rel="manifest"
       href="./assets/favicon_package_v0.16/site.webmanifest"
     />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&f[]=clash-display@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="nav container">
@@ -120,45 +124,55 @@
       </div>
     </nav>
 
-    <!-- <header>
-      <div class="swiper mySwiper">
+    <header>
+      <div class="myHeaderSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div>
-              <h1>Welcome to OKTELLER NIGERIA</h1>
-              <p>
-                OKTELLER NIGERIA is into Telecommunication, Digital Services and
-                Market Exchange. We offer best deals when it comes to internet
-                Data Plans, Airtime,Bills payment like GOTV, DSTV & STARTIMES.
-              </p>
-              <div>
-                <button>Register</button>
-                <button>Login</button>
+            <div class="swiper-content container">
+              <div class="swiper-content-left">
+                <h1>Welcome to OKTELLER NIGERIA</h1>
+                <p>
+                  OKTELLER NIGERIA is into Telecommunication, Digital Services
+                  and Market Exchange. We offer best deals when it comes to
+                  internet Data Plans, Airtime,Bills payment like GOTV, DSTV &
+                  STARTIMES.
+                </p>
+                <div>
+                  <button>Register</button>
+                  <button>Login</button>
+                </div>
+              </div>
+              <div class="swiper-content-right">
+                <img src="./assets/home-1.png" alt="" />
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div>
-              <h1>
-                OKTELLER NIGERIA your number one stop for unlimited services
-              </h1>
-              <p>
-                This is a telecommunication industry playing a major role in
-                distribution, selling affordable and most cheapest data,
-                airtime, Dstv subscription, Gotv subscription, Startimes
-                subscription, Convert Airtime to Cash and Electricity
-                subscription.
-              </p>
-              <div>
-                <button>Register</button>
-                <button>Login</button>
+            <div class="swiper-content container">
+              <div class="swiper-content-left">
+                <h1>
+                  OKTELLER NIGERIA your number one stop for unlimited services
+                </h1>
+                <p>
+                  This is a telecommunication industry playing a major role in
+                  distribution, selling affordable and most cheapest data,
+                  airtime, Dstv subscription, Gotv subscription, Startimes
+                  subscription, Convert Airtime to Cash and Electricity
+                  subscription.
+                </p>
+                <div>
+                  <button>Register</button>
+                  <button>Login</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/home-2.png" alt="" />
               </div>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="about-us container" id="about">
         <h2>ABOUT US</h2>
@@ -1003,7 +1017,16 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <script>
-    var swiper = new Swiper('.mySwiper', {});
+    var swiper = new Swiper('.myHeaderSwiper', {
+      loop: true,
+      keyboard: {
+        enabled: true,
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+    });
 
     document.getElementById('current-year').textContent =
       new Date().getFullYear();

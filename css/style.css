@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Sarpanch:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Raleway:wght@400;500&family=Sarpanch:wght@400;500;700;800&display=swap');
 
 :root {
   --font-Raleway: 'Raleway', sans-serif;
   --font-Sarpanch: 'Sarpanch', sans-serif;
+  --font-logo: 'Dancing Script', cursive;
+  --deep-green: #45a049;
+  --font-text: 'Satoshi', sans-serif;
+  --font-semi-header: 'Clash Display', sans-serif;
+  --black-text: #212529;
+  --grey-text: #a1a1a1;
 }
 
 * {
@@ -29,7 +35,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: var(--black-text);
 
   font-family: var(--font-Raleway);
   background-color: #efefef;
@@ -41,6 +47,67 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* RE-USEABLES */
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-left: 5rem;
+}
+
+.container {
+  width: 100%;
+  padding: 3rem 10rem;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--black-text);
+  font-family: var(--font-Raleway);
+  max-width: 2049px !important;
+}
+
+/* header */
+.myHeaderSwiper {
+  height: 90vh !important;
+  overflow: hidden;
+  background: #00ff00;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#00ff00),
+    to(#98fb98)
+  );
+  background: linear-gradient(to right, #00ff00, #98fb98) !important;
+}
+
+.swiper-content {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-content-left {
+  flex: 2;
+}
+
+.swiper-content-left h1 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.swiper-content-right {
+  flex: 1;
+}
+
+.swiper-content img {
+  width: auto !important;
+  height: auto;
+}
+
 /* SWIPER */
 .swiper {
   width: 100%;
@@ -49,9 +116,7 @@ body::-webkit-scrollbar {
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+  /* text-align: center; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +128,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  pointer-events: none; /* Disable pointer events on the image for better scrolling/swiping experience */
+  pointer-events: none;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -488,7 +553,7 @@ body::-webkit-scrollbar {
 }
 
 .app-link:hover {
-  background-color: #45a049;
+  background-color: var(--deep-green);
 }
 
 .app-icon {
@@ -535,11 +600,12 @@ body::-webkit-scrollbar {
 
 .contact-details a {
   text-decoration: none;
-  color: #212529;
+  color: var(--black-text);
 }
 
 /* FOOTER */
 footer {
+  padding-top: 2rem;
   background-color: #98fb98;
 }
 
@@ -549,11 +615,14 @@ footer ul {
 
 footer a {
   text-decoration: none;
-  color: #212529;
+  color: var(--black-text);
 }
 
 footer li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-family: var(--font-text);
+  font-weight: bold;
 }
 
 footer li a {
@@ -561,33 +630,20 @@ footer li a {
 }
 
 footer li a:hover {
-  color: #007bff; /* Update with your desired hover color */
+  color: var(--grey-text); /* Update with your desired hover color */
   font-weight: 500;
 }
 
 .copyright {
   text-align: center;
+  font-weight: bold;
+  font-family: var(--font-text);
+  color: var(--grey-text);
 }
 
-.container {
-  width: 100%;
-  padding: 3rem 10rem;
-  margin-right: auto;
-  margin-left: auto;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  font-family: var(--font-Raleway);
-  max-width: 2049px !important;
-}
-
-.container-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  padding-left: 5rem;
+.section-container {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .footer-logo,
@@ -596,12 +652,29 @@ footer li a:hover {
   flex: 1;
 }
 
-.footer-logo h1,
 footer h2 {
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 0.5rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: var(--font-semi-header);
+  color: var(--deep-green);
+}
+
+.footer-logo h1 {
+  /* font-family: var(--font-logo); */
+  font-size: 2rem;
+  color: var(--deep-green);
+  font-weight: bolder;
+}
+
+.footer-logo p {
+  font-family: var(--font-text);
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .nav {
@@ -625,9 +698,10 @@ footer h2 {
 }
 
 .nav .logo h1 {
-  font-size: 24px;
+  font-size: 2rem;
   color: #fff;
   margin: 0;
+  font-family: var(--font-logo);
 }
 
 .nav .menu ul {
@@ -647,7 +721,7 @@ footer h2 {
 }
 
 .nav .menu ul li a {
-  color: #212529;
+  color: var(--black-text);
   text-decoration: none;
   font-size: 16px;
   text-transform: uppercase;
