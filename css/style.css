@@ -145,14 +145,6 @@ body::-webkit-scrollbar {
   background-color: #5ac25a;
 }
 
-.img-network {
-  width: 262.5px;
-  /* height: 200px; */
-  /* height: 100px !important; */
-  margin: 10px;
-  aspect-ratio: 1/1;
-}
-
 @media screen and (max-width: 767px) {
   .img-network {
     width: 100%;
@@ -278,7 +270,46 @@ body::-webkit-scrollbar {
 
 /* SERVICES */
 
-/* Services Section */
+.services-icon {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+}
+
+.pink {
+  background: #ed6ba6;
+}
+
+.lime {
+  background-color: #aecd5e;
+}
+
+.blue {
+  background: #4c7fbd;
+}
+
+.orange {
+  background: #ea6b45;
+}
+
+.grey {
+  background-color: #cccccc;
+}
+
+.green {
+  background-color: #c3c3df;
+}
+
+.services-text {
+  text-align: center;
+  font-family: var(--font-text);
+}
+
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -322,6 +353,21 @@ body::-webkit-scrollbar {
 }
 
 /* Statistics Section */
+
+.img-network {
+  width: 100%;
+  height: auto;
+  /* height: 200px; */
+  /* height: 100px !important; */
+  margin: 10px;
+  aspect-ratio: 1/1;
+}
+
+.img-network img {
+  width: 100%;
+  height: 100%;
+}
+
 .statistics {
   display: flex;
   align-items: center;
@@ -335,9 +381,6 @@ body::-webkit-scrollbar {
   justify-content: center;
   flex-direction: column;
   padding: 10px; /* Add padding for better spacing */
-  background-color: #f2f2f2; /* Add a background color */
-  border-radius: 4px; /* Rounded corners */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
@@ -354,7 +397,14 @@ body::-webkit-scrollbar {
 
 .statistics .faq-title {
   font-size: 2rem;
-  /* color: #333; */
+  color: var(--grey-text);
+  font-family: var(--font-semi-header);
+}
+
+.satistics-title {
+  font-family: var(--font-Sarpanch);
+  color: var(--deep-green) !important;
+  font-weight: bold !important;
 }
 
 /* NETWORK PROVIDERS  */

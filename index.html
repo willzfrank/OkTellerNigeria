@@ -255,13 +255,16 @@
         </div>
       </section>
 
-      <section class="container" id="features">
+      <section class="container services-container" id="features">
         <h2 class="faq-title">Our Awesome Services</h2>
-        <p>We Provide The Best Services.</p>
+        <p class="services-text">We Provide The Best Services.</p>
         <ul class="services">
           <li>
             <article>
-              <img src="data.png" alt="Buy Data" />
+              <div class="services-icon green">
+                <i class="uil uil-shopping-cart"></i>
+              </div>
+
               <h3>Buy<span> Data </span></h3>
               <p>
                 Start enjoying this very low rates Data plan for your internet
@@ -271,7 +274,9 @@
           </li>
           <li>
             <article>
-              <img src="utility.png" alt="Utility Payment" />
+              <div class="services-icon grey">
+                <i class="uil uil-bill"></i>
+              </div>
               <h3>Utility <span>Payment</span></h3>
               <p>
                 Because we understand your needs, we have made bills and
@@ -281,7 +286,9 @@
           </li>
           <li>
             <article>
-              <img src="cable.png" alt="Cable Subscription" />
+              <div class="services-icon orange">
+                <i class="uil uil-play-circle"></i>
+              </div>
               <h3>Cable <span>Subscription</span></h3>
               <p>
                 Instantly Activate Cable subscription with favourable discount
@@ -291,7 +298,9 @@
           </li>
           <li>
             <article>
-              <img src="airtime.png" alt="Airtime TopUp" />
+              <div class="services-icon blue">
+                <i class="uil uil-mobile-android"></i>
+              </div>
               <h3>Airtime <span>TopUp</span></h3>
               <p>
                 Making an online recharge has become very easy and safe on
@@ -301,7 +310,9 @@
           </li>
           <li>
             <article>
-              <img src="cash.png" alt="Airtime To Cash" />
+              <div class="services-icon lime">
+                <i class="uil uil-dollar-sign-alt"></i>
+              </div>
               <h3>Airtime <span>To Cash</span></h3>
               <p>
                 We offer this service at a very good attractive rate login to
@@ -311,7 +322,9 @@
           </li>
           <li>
             <article>
-              <img src="sms.png" alt="Bulk SMS" />
+              <div class="services-icon pink">
+                <i class="uil uil-envelope-star"></i>
+              </div>
               <h3>Bulk <span>SMS</span></h3>
               <p>
                 Send BulkSMS to any number for as low as just 1.5kobo per unit.
@@ -322,20 +335,20 @@
 
         <ul class="statistics">
           <li>
-            <p>Users</p>
-            <p class="faq-title">4560+</p>
+            <p class="satistics-title">Users</p>
+            <p class="faq-title" id="usersCount">4560+</p>
           </li>
           <li>
-            <p>Happy Clients</p>
-            <p class="faq-title">4032+</p>
+            <p class="satistics-title">Happy Clients</p>
+            <p class="faq-title" id="clientsCount">4032+</p>
           </li>
           <li>
-            <p>Logged In Users</p>
-            <p class="faq-title">3238+</p>
+            <p class="satistics-title">Logged In Users</p>
+            <p class="faq-title" id="loggedInCount">3238+</p>
           </li>
           <li>
-            <p>Years of Experience</p>
-            <p class="faq-title">4</p>
+            <p class="satistics-title">Years of Experience</p>
+            <p class="faq-title" id="experienceCount">4</p>
           </li>
         </ul>
 
@@ -1129,5 +1142,84 @@
         navToggle.classList.add('uil-bars');
       });
     });
+
+    // Get the elements by their IDs
+    var usersCountElement = document.getElementById('usersCount');
+    var clientsCountElement = document.getElementById('clientsCount');
+    var loggedInCountElement = document.getElementById('loggedInCount');
+    var experienceCountElement = document.getElementById('experienceCount');
+
+    // Define the target numbers
+    var usersCount = 4560;
+    var clientsCount = 4032;
+    var loggedInCount = 3238;
+    var experienceCount = 4;
+
+    // Define the duration for the animation (in milliseconds)
+    var duration = 2000;
+
+    // Define the interval between each count update (in milliseconds)
+    var interval = 50;
+
+    // Calculate the increment for each step
+    var usersIncrement = Math.ceil(usersCount / (duration / interval));
+    var clientsIncrement = Math.ceil(clientsCount / (duration / interval));
+    var loggedInIncrement = Math.ceil(loggedInCount / (duration / interval));
+    var experienceIncrement = Math.ceil(
+      experienceCount / (duration / interval)
+    );
+
+    // Function to update the count for each element
+    function updateCount(element, target, increment) {
+      var currentCount = 0;
+      var intervalId = setInterval(function () {
+        currentCount += increment;
+        element.textContent = currentCount + '+';
+        if (currentCount >= target) {
+          element.textContent = target + '+';
+          clearInterval(intervalId);
+        }
+      }, interval);
+    }
+
+    // Function to check if the section is in the viewport
+    function isElementInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <=
+          (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Function to handle the scroll event
+    function handleScroll() {
+      if (isElementInViewport(usersCountElement)) {
+        updateCount(usersCountElement, usersCount, usersIncrement);
+        window.removeEventListener('scroll', handleScroll);
+      }
+      if (isElementInViewport(clientsCountElement)) {
+        updateCount(clientsCountElement, clientsCount, clientsIncrement);
+        window.removeEventListener('scroll', handleScroll);
+      }
+      if (isElementInViewport(loggedInCountElement)) {
+        updateCount(loggedInCountElement, loggedInCount, loggedInIncrement);
+        window.removeEventListener('scroll', handleScroll);
+      }
+      if (isElementInViewport(experienceCountElement)) {
+        updateCount(
+          experienceCountElement,
+          experienceCount,
+          experienceIncrement
+        );
+        window.removeEventListener('scroll', handleScroll);
+      }
+    }
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', handleScroll);
   </script>
 </html>
