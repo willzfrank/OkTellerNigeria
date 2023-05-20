@@ -404,7 +404,17 @@ body::-webkit-scrollbar {
 
 .price-container p {
   font-size: 20px;
-  color: #333;
+  color: var(--grey-text);
+  text-align: center;
+}
+
+.price-container h2 {
+  text-align: center;
+  font-family: var(--font-semi-header);
+}
+
+.price-container h6 {
+  font-family: var(--font-text);
 }
 
 .data-plan {
@@ -412,9 +422,10 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background-color: #f8f8f8;
+  background-color: white;
   border-radius: 4px;
   margin-bottom: 1rem;
+  font-family: var(--font-text);
 }
 
 .data-plan div:first-child {
@@ -607,7 +618,7 @@ body::-webkit-scrollbar {
 }
 
 .contact-details article {
-  background-color: #f9f9f9;
+  background-color: white;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
