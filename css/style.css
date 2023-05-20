@@ -107,6 +107,7 @@ body::-webkit-scrollbar {
 .swiper-content-left p {
   color: white;
   font-family: var(--font-text);
+  font-weight: bold !important;
 }
 
 .swiper-content-right {
@@ -874,7 +875,7 @@ footer h2 {
   font-size: 2rem;
   color: #fff;
   margin: 0;
-  font-family: var(--font-logo);
+  font-family: var(--font-Sarpanch);
 }
 
 .nav .menu ul {
@@ -887,6 +888,8 @@ footer h2 {
 .nav .menu ul li {
   margin-right: 20px;
   line-height: 1.4;
+  font-family: var(--font-text);
+  font-weight: bold;
 }
 
 .nav .menu ul li:last-child {
@@ -901,9 +904,14 @@ footer h2 {
   transition: color 0.3s ease; /* Adding a transition effect */
 }
 
-.nav .menu ul li a:hover {
+.nav .menu ul li a:hover,
+.nav .menu ul li a.active {
   color: white !important;
   font-weight: 500;
+}
+
+.nav-active {
+  color: white;
 }
 
 .mobile-nav {
@@ -990,6 +998,7 @@ footer h2 {
     font-size: 32px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    color: white;
   }
 
   .uil-bars:hover,
@@ -1003,6 +1012,10 @@ footer h2 {
     justify-content: space-between;
   }
 
+  .mobile-nav-content h1 {
+    color: white;
+  }
+
   .nav {
     display: none;
   }
@@ -1013,6 +1026,8 @@ footer h2 {
 
   .mobile-nav-menu ul {
     list-style: none;
+    color: var(--black-text);
+    font-weight: bold;
   }
 
   .mobile-nav-menu ul li a {
@@ -1023,6 +1038,10 @@ footer h2 {
   .mobile-nav-menu ul li {
     margin: 0.7rem 0;
     font-size: 20px;
+  }
+
+  .mobile-nav-menu ul li:hover {
+    color: white;
   }
 
   .showNav {
