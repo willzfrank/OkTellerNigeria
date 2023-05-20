@@ -215,6 +215,12 @@ body::-webkit-scrollbar {
 }
 
 /* Style for the why-choose-us section */
+
+.why-choose-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .why-choose-us {
   text-align: center;
   padding: 40px 0;
@@ -231,7 +237,6 @@ body::-webkit-scrollbar {
   margin-bottom: 40px;
 }
 
-/* Style for the features */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -249,12 +254,15 @@ body::-webkit-scrollbar {
 
 .features article h3 {
   font-size: 20px;
+  color: var(--deep-green);
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
 .features article p {
   font-size: 16px;
-  color: #555;
+  color: var(--grey-text);
+  font-family: var(--font-text);
 }
 
 .image-container {
@@ -946,6 +954,10 @@ footer h2 {
 }
 
 @media screen and (max-width: 767px) {
+  .features-image {
+    display: none;
+  }
+
   .container-flex {
     display: flex;
     align-items: flex-start;
