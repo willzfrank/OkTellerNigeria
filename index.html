@@ -866,10 +866,10 @@
               </h3>
               <div class="faq-answer">
                 <ol>
-                  <li>MTN *131*4#</li>
-                  <li>9mobile[Gifting] *228#</li>
-                  <li>Airtel *140#</li>
-                  <li>Glo *127*0#.</li>
+                  <li>MTN <b> *131*4#</b></li>
+                  <li>9mobile[Gifting] <b>*228#</b></li>
+                  <li>Airtel<b> *140#</b></li>
+                  <li>Glo<b> *127*0#</b>.</li>
                 </ol>
               </div>
             </div>
@@ -1031,30 +1031,42 @@
     document.getElementById('current-year').textContent =
       new Date().getFullYear();
 
-    // Get all the FAQ items
-    const faqItems = document.querySelectorAll('.faq-item');
+    // Get the parent container for the accordion items
+    const faqContainer = document.querySelector('.faq-content');
 
-    // Add event listeners to toggle the accordion
-    faqItems.forEach((item) => {
-      item.addEventListener('click', toggleAccordion);
+    // Add event listener to the parent container using event delegation
+    faqContainer.addEventListener('click', function (event) {
+      const clickedItem = event.target.closest('.faq-item');
+      if (clickedItem) {
+        toggleAccordion(clickedItem);
+      }
     });
 
     // Function to toggle the accordion
-    function toggleAccordion() {
-      const isActive = this.classList.contains('active');
+    function toggleAccordion(item) {
+      const isActive = item.classList.contains('active');
       closeAllItems();
 
       if (!isActive) {
-        this.classList.add('active');
-        const answer = this.querySelector('.faq-answer');
+        item.classList.add('active');
+        const question = item.querySelector('.faq-question');
+        question.classList.add('active-question'); // Add the 'active-question' class
+        const icon = question.querySelector('i');
+        icon.classList.replace('uil-plus', 'uil-minus'); // Replace the 'uil-plus' class with 'uil-minus'
+        const answer = item.querySelector('.faq-answer');
         answer.classList.add('show');
       }
     }
 
     // Function to close all FAQ items
     function closeAllItems() {
-      faqItems.forEach((item) => {
+      const activeItems = faqContainer.querySelectorAll('.faq-item.active');
+      activeItems.forEach((item) => {
         item.classList.remove('active');
+        const question = item.querySelector('.faq-question');
+        question.classList.remove('active-question'); // Remove the 'active-question' class
+        const icon = question.querySelector('i');
+        icon.classList.replace('uil-minus', 'uil-plus'); // Replace the 'uil-minus' class with 'uil-plus'
         const answer = item.querySelector('.faq-answer');
         answer.classList.remove('show');
       });

@@ -28,15 +28,13 @@ h4,
 h5,
 h6 {
   font-family: var(--font-Sarpanch);
-  /* color: black; */
 }
 
 body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--black-text);
-
+  color: var(--grey-text);
   font-family: var(--font-Raleway);
   background-color: #efefef;
   -ms-overflow-style: none;
@@ -56,6 +54,10 @@ body::-webkit-scrollbar {
   padding-left: 5rem;
 }
 
+.deep-green {
+  color: var(--deep-green);
+}
+
 .container {
   width: 100%;
   padding: 3rem 10rem;
@@ -64,7 +66,7 @@ body::-webkit-scrollbar {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--black-text);
+  /* color: var(--black-text); */
   font-family: var(--font-Raleway);
   max-width: 2049px !important;
 }
@@ -444,14 +446,28 @@ body::-webkit-scrollbar {
 
 /* FAQ */
 
+.faq-description {
+  text-align: center;
+}
+
+.faq-title {
+  font-family: var(--font-semi-header);
+  text-align: center;
+}
+
+.faq-question.active-question {
+  color: #45a049;
+}
+
 .faq-section {
   padding: 40px;
 }
 
 .faq-description {
   font-size: 18px;
-  color: #777;
+  color: var(--grey-text);
   margin-bottom: 40px;
+  font-family: var(--font-text);
 }
 
 .faq-image {
@@ -469,6 +485,13 @@ body::-webkit-scrollbar {
 
 .faq-item.active .faq-answer {
   max-height: 1000px;
+  color: var(--grey-text);
+  font-family: var(--font-text);
+}
+
+.faq-question.active {
+  color: var(--deep-green);
+  /* font-family: var(--font-semi-header) ; */
 }
 
 .faq-image img {
@@ -485,13 +508,16 @@ body::-webkit-scrollbar {
 }
 
 .faq-item {
-  background-color: #fff;
+  border: 2px solid #43f943;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 700px;
   margin-bottom: 20px;
+  transition: max-height 0.3s ease;
+  /* max-height: 0; */
+  overflow: hidden;
 }
 
 .faq-question {
@@ -501,9 +527,11 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: color 0.3s ease;
 }
 
-.uil-plus {
+.uil-plus,
+.uil-minus {
   cursor: pointer;
 }
 
@@ -519,15 +547,17 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-family: var(--font-text);
 }
 
 .download-title {
   font-size: 28px;
+  font-family: var(--font-semi-header);
 }
 
 .download-description {
   font-size: 16px;
-  color: #777;
+  color: var(--grey-text);
   margin-bottom: 40px;
   max-width: 900px;
   width: 100%;
@@ -559,6 +589,10 @@ body::-webkit-scrollbar {
 
 .contact-title {
   margin-bottom: 1rem;
+}
+
+.contact-title h2 {
+  font-family: var(--font-semi-header);
 }
 
 .contact-title p {
@@ -667,6 +701,7 @@ footer h2 {
   text-transform: capitalize;
   font-size: 0.9rem;
   font-weight: bold;
+  color: var(--black-text);
 }
 
 .nav {
