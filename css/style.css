@@ -395,17 +395,9 @@ body::-webkit-scrollbar {
 .contact-title h2 {
   font-size: 38px;
   line-height: 48px;
-  color: #71f471;
+  color: var(--deep-green);
   margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-.price-container h2 span,
-.faq-title span,
-.download-title span,
-.contact-title h2 span {
-  font-weight: 600 !important;
-  color: #43f943 !important;
+  font-weight: bold;
 }
 
 .price-container p {
@@ -569,6 +561,11 @@ body::-webkit-scrollbar {
   margin-bottom: 1rem;
 }
 
+.contact-title p {
+  font-family: var(--font-text);
+  color: var(--grey-text);
+}
+
 .contact-details {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -584,23 +581,18 @@ body::-webkit-scrollbar {
 
 .contact-details h3 {
   margin-bottom: 0.5rem;
-  color: #71f471;
-}
-
-.contact-details h3 span {
-  margin-bottom: 0.5rem;
-  color: #43f943;
+  color: var(--deep-green);
   font-weight: bold;
 }
 
 .contact-details p,
 .contact-details a {
   margin-bottom: 0;
+  color: var(--grey-text);
 }
 
 .contact-details a {
   text-decoration: none;
-  color: var(--black-text);
 }
 
 /* FOOTER */
