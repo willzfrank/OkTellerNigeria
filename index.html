@@ -53,6 +53,8 @@
       href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&f[]=clash-display@600&display=swap"
       rel="stylesheet"
     />
+    <!-- Animate css -->
+    <link rel="stylesheet" href="css/animate.css" />
   </head>
   <body>
     <nav class="nav container">
@@ -146,7 +148,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-content-right">
+              <div class="swiper-content-right wow animate__zoomIn">
                 <img src="./assets/home-1.png" alt="" />
               </div>
             </div>
@@ -173,7 +175,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-content-right">
+              <div class="swiper-content-right wow animate__zoomIn">
                 <img src="./assets/home-2.png" alt="" />
               </div>
             </div>
@@ -192,7 +194,7 @@
           Samsung devices.
         </p>
         <div class="content container">
-          <div>
+          <div class="content-box">
             <h3>Best Telecommunication Company</h3>
             <p>
               OKTELLER NIGERIA also provides individuals with the opportunity to
@@ -1039,4 +1041,32 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    // Initialize WOW.js
+    new WOW().init();
+
+    // Initialize ScrollReveal
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400,
+    });
+
+    ScrollReveal().reveal('.content-box', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.about-us-image, .features-image', {
+      delay: 500,
+      origin: 'right',
+    });
+    ScrollReveal().reveal(
+      '.features article, .services li, .faq-item, .contact-details article',
+      {
+        delay: 500,
+        origin: 'bottom',
+        interval: 200,
+      }
+    );
+  </script>
 </html>
