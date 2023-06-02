@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Raleway:wght@400;500&family=Sarpanch:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap');
 
 :root {
-  --font-Raleway: 'Raleway', sans-serif;
-  --font-Sarpanch: 'Sarpanch', sans-serif;
+  --font-Raleway: 'Montserrat', sans-serif;
+  --font-Sarpanch: 'Roboto', sans-serif;
   --font-logo: 'Dancing Script', cursive;
   --deep-green: #45a049;
   --font-text: 'Satoshi', sans-serif;
@@ -75,15 +75,7 @@ body::-webkit-scrollbar {
 .myHeaderSwiper {
   height: 90vh !important;
   overflow: hidden;
-  background: #00ff00;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#00ff00),
-    to(#98fb98)
-  );
-  background: linear-gradient(to right, #00ff00, #98fb98) !important;
+  background: linear-gradient(to right, white, #acf181);
 }
 
 .swiper-content {
@@ -99,13 +91,11 @@ body::-webkit-scrollbar {
 .swiper-content-left h1 {
   font-size: 50px;
   line-height: 1.2;
-  color: white;
   font-family: var(--font-semi-header);
   font-weight: bold;
 }
 
 .swiper-content-left p {
-  color: white;
   font-family: var(--font-text);
   font-weight: bold !important;
 }
@@ -127,8 +117,7 @@ body::-webkit-scrollbar {
 }
 
 .register-btn {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid var(--black-text);
   background-color: transparent;
   padding: 10px 1.5rem;
   text-transform: capitalize;
@@ -140,8 +129,8 @@ body::-webkit-scrollbar {
 }
 
 .login-btn {
-  color: #71f471;
-  background-color: white;
+  color: white;
+  background-color: var(--black-text);
   padding: 10px 1.5rem;
   text-transform: capitalize;
   font-weight: 500;
@@ -779,7 +768,8 @@ body::-webkit-scrollbar {
 /* FOOTER */
 footer {
   padding-top: 2rem;
-  background-color: #98fb98;
+  /* background-color: #98fb98; */
+  background: linear-gradient(to right, white, #acf181);
 }
 
 footer ul {
@@ -855,15 +845,7 @@ footer h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #00ff00;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#00ff00),
-    to(#98fb98)
-  );
-  background: linear-gradient(to right, #00ff00, #98fb98);
+  background: linear-gradient(to right, white, #acf181);
   padding: 20px;
   position: sticky;
   top: 0;
@@ -873,7 +855,7 @@ footer h2 {
 
 .nav .logo h1 {
   font-size: 2rem;
-  color: #fff;
+  /* color: #fff; */
   margin: 0;
   font-family: var(--font-Sarpanch);
 }
